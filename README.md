@@ -27,6 +27,24 @@ This repository provides a simple setup to compile and run C++ programs using Do
     docker run --rm -it cpp-docker
     ```
 
+## Using Pre-built Docker Image
+
+### Pull the Image
+
+To pull the image from Docker Hub, use the following command:
+
+```sh
+docker pull saqibbedar/cpp-docker-runner:latest
+```
+
+### Running the Container
+
+To run the container and execute the C++ program, use the following command:
+
+```sh
+docker run -it --rm saqibbedar/cpp-docker-runner:latest
+```
+
 ## Repository Structure
 
 - `Dockerfile`: Contains the instructions to build the Docker image.
