@@ -1,11 +1,8 @@
 # Use official g++ alpine image
-FROM gcc:6.3.0-alpine
+FROM gcc:latest
 
 # Set the working directory inside container
 WORKDIR /app
-
-# Install necessary packages
-RUN apk add --no-cache libstdc++
 
 # Copy source code to container
 COPY main.cpp .
